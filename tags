@@ -1,0 +1,68 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BUFFER_SIZE	mycp_client_UDP.c	15;"	d	file:
+BUFFER_SIZE	mycp_server_UDP.c	16;"	d	file:
+DOUBLE	6.c	5;"	d	file:
+LEN	10.c	4;"	d	file:
+NLOOP	pthread_dead_lock.c	9;"	d	file:
+NLOOP	pthread_mutex.c	6;"	d	file:
+SERVER_PORT	mycp_client_UDP.c	14;"	d	file:
+SERVER_PORT	mycp_server_UDP.c	15;"	d	file:
+a	2.c	/^    unsigned long a;$/;"	m	union:data	file:
+a	3.c	/^}a, *p;$/;"	v	typeref:struct:no_hole
+b	2.c	/^    char b[4];$/;"	m	union:data	file:
+buffer	mycp_client_UDP.c	/^char buffer[BUFFER_SIZE];$/;"	v
+buffer	mycp_server_UDP.c	/^char buffer[BUFFER_SIZE]; $/;"	v
+cmp	7.c	/^int cmp(const void *p1, const void *p2)$/;"	f
+counter	pthread_dead_lock.c	/^int counter;$/;"	v
+counter	pthread_mutex.c	/^int counter;$/;"	v
+counter_mutex	pthread_mutex.c	/^pthread_mutex_t counter_mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+counter_mutex1	pthread_dead_lock.c	/^pthread_mutex_t counter_mutex1 = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+counter_mutex2	pthread_dead_lock.c	/^pthread_mutex_t counter_mutex2 = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+data	2.c	/^union data$/;"	u	file:
+delay	5.c	/^void delay(int x)$/;"	f
+doit	pthread_mutex.c	/^void *doit(void *vptr)$/;"	f
+doit1	pthread_dead_lock.c	/^void *doit1(void *vptr)$/;"	f
+doit2	pthread_dead_lock.c	/^void *doit2(void *vptr)$/;"	f
+filename	mycp_server_UDP.c	/^char filename[256]; $/;"	v
+function_name	6.c	/^void function_name(char aa[100])$/;"	f
+get_memory	6.c	/^char * get_memory(void)$/;"	f
+i	mycp_client_UDP.c	/^int i;$/;"	v
+i	mycp_server_UDP.c	/^int i;$/;"	v
+j	6.c	/^int j = 3;$/;"	v
+len	3.c	/^    int len;$/;"	m	struct:no_hole	file:
+main	10.c	/^int main(int argc, const char *argv[])$/;"	f
+main	2.c	/^int main(int argc, const char *argv[])$/;"	f
+main	3.c	/^int main(int argc, const char *argv[])$/;"	f
+main	4.c	/^int main(int argc, const char *argv[])$/;"	f
+main	5.c	/^int main(int argc, const char *argv[])$/;"	f
+main	6.c	/^int main(int argc, const char *argv[])$/;"	f
+main	7.c	/^int main(int argc, const char *argv[])$/;"	f
+main	8.c	/^int main(int argc, const char *argv[])$/;"	f
+main	9.c	/^int main(int argc, const char *argv[])$/;"	f
+main	hello.c	/^int main(int argc, const char *argv[])$/;"	f
+main	mycp_client_UDP.c	/^int main(int argc, char *argv[])$/;"	f
+main	mycp_server_UDP.c	/^int main(int argc, const char *argv[])$/;"	f
+main	pthread.c	/^int main(int argc, const char *argv[])$/;"	f
+main	pthread_dead_lock.c	/^int main(int argc, const char *argv[])$/;"	f
+main	pthread_join.c	/^int main(int argc, const char *argv[])$/;"	f
+main	pthread_mutex.c	/^int main(int argc, const char *argv[])$/;"	f
+msg	10.c	/^char msg[14] = "Hello,world\\n";$/;"	v
+no_hole	3.c	/^struct no_hole$/;"	s	file:
+ntid	pthread.c	/^pthread_t ntid;$/;"	v
+p	3.c	/^}a, *p;$/;"	v	typeref:struct:no_hole
+p	6.c	/^char p[20];$/;"	v
+para	Makefile	/^para=-Wall -lpthread$/;"	m
+printids	pthread.c	/^void printids(const char *s)$/;"	f
+scr	Makefile	/^scr=pthread_dead_lock.c$/;"	m
+str	3.c	/^    char *str;$/;"	m	struct:no_hole	file:
+test	6.c	/^void test(void)$/;"	f
+thr_fn	pthread.c	/^void *thr_fn(void *arg)$/;"	f
+thr_fn1	pthread_join.c	/^void *thr_fn1(void *arg)$/;"	f
+thr_fn2	pthread_join.c	/^void *thr_fn2(void *arg)$/;"	f
+thr_fn3	pthread_join.c	/^void *thr_fn3(void *arg)$/;"	f
+u	2.c	/^}u = {0xabcdef98};$/;"	v	typeref:union:data

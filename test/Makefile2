@@ -1,0 +1,23 @@
+#all:
+	#gcc -Wall -g linked_sort.c -I ./myinc
+	#./a.out
+#clean:
+	#rm a.out
+src = $(wildcard *.c)
+#obj = $(patsubst %.c, %.o, $(src))
+obj = $(patsubst %.c, %, $(src))
+
+all:$(obj)
+%:%.c
+	gcc $^ -o $@
+#$(target):$(obj)
+	#gcc -o $@ -g $^
+#%.o:%.c
+	#gcc -o $@ -g -Wall -c $<
+clean:
+	#rm -f $(target)
+	rm -f $(obj)
+	rm *.o -f
+
+test:
+	@echo $(obj)

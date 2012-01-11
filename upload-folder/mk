@@ -1,0 +1,6 @@
+arm_v5t_le-gcc mycp_client_UDP_test_dm6467.c -lpthread -Wall -o TS1500DC_update_ARM.bin
+sudo cp TS1500DC_update_ARM.bin /home/navyzhou/nfs/rootfs/home/
+sudo cp TS1500DC_update_ARM.bin /home/navyzhou/tftp
+sudo cp TS1500DC_update_ARM.bin /home/navyzhou/samba_share
+sudo cp TS1500DC_update_PC.bin /home/navyzhou/samba_share
+gcc mycp_client_UDP_test_dm6467.c -o TS1500DC_update_PC.bin -lpthread

@@ -1,0 +1,17 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUFFER_SIZE	mycp_client_UDP_test_dm6467.c	24;"	d	file:
+PATH_HOME	mycp_client_UDP_test_dm6467.c	19;"	d	file:
+SERVER_PORT	mycp_client_UDP_test_dm6467.c	21;"	d	file:
+SERVER_PORT_TCP	mycp_client_UDP_test_dm6467.c	23;"	d	file:
+SERVER_PORT_UDP	mycp_client_UDP_test_dm6467.c	22;"	d	file:
+fd_before	mycp_client_UDP_test_dm6467.c	/^FILE *fd_before = NULL;$/;"	v
+fd_now	mycp_client_UDP_test_dm6467.c	/^FILE *fd_now = NULL;$/;"	v
+flag	mycp_client_UDP_test_dm6467.c	/^int flag = 0;$/;"	v
+get_local_ip	mycp_client_UDP_test_dm6467.c	/^int get_local_ip(char *out_ip, char *out_mac)$/;"	f
+main	mycp_client_UDP_test_dm6467.c	/^int main(int argc, char *argv[])$/;"	f
+received_file	mycp_client_UDP_test_dm6467.c	/^FILE * received_file(const char *buffer, int len, char *filename)$/;"	f

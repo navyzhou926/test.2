@@ -1,0 +1,1 @@
+cmd_/home/navyzhou/navy/reg_rw_driver/reg_rw.ko := arm_v5t_le-ld -EL  -r -o /home/navyzhou/navy/reg_rw_driver/reg_rw.ko /home/navyzhou/navy/reg_rw_driver/reg_rw.o /home/navyzhou/navy/reg_rw_driver/reg_rw.mod.o
