@@ -15,6 +15,7 @@
 #include <netdb.h>
 #include <net/if.h>
 #include <sys/ioctl.h>
+#include <pthread.h>
 
 //#define DEBUG
 
@@ -24,7 +25,7 @@
 #define printf_debug(fmt,arg...) do{ } while (0)
 #endif 
 
-#define PATH_HOME "/home/test/test"
+#define PATH_HOME "/home"
 
 #define SERVER_PORT	    8000	
 #define SERVER_PORT_UDP	   21203 
@@ -38,6 +39,24 @@ FILE *fd_before = NULL;
 FILE *fd_now = NULL;
 int flag = 0;
 
+char ip[36] = {0};
+char mac[36] = {0};
+
+void *pthread(void *arg)
+{
+    while (1) 
+    {
+        sleep(120);
+        if (get_local_ip(ip, mac) == 0) 
+        {
+            printf("local ip: %s\n",ip);
+            printf("local mac: %s\n",mac);
+        }
+    }
+
+    return (void *)1;
+}
+
 int main(int argc, char *argv[])
 {
     int len = 0;
@@ -45,14 +64,14 @@ int main(int argc, char *argv[])
     socklen_t client_len;  
     int server_sock;
     struct sockaddr_in server, client;
-    struct in_addr in;
+    //struct in_addr in;
 
     int server_sock_tcp;
     int client_sock_tcp; 
     struct sockaddr_in server_tcp,client_tcp;
 
-    char ip[36] = {0};
-    char mac[36] = {0};
+    pthread_t tid;
+
     char *receive_ip = NULL;
     char *receive_mac = NULL;
     char *p = NULL;
@@ -68,6 +87,12 @@ get_ip_mac:
         printf("Can not get loacl ip\n");
         sleep(3);
         goto get_ip_mac;
+    }
+
+    if (pthread_create(&tid, NULL, pthread, NULL) != 0) 
+    {
+        printf("can't create thread\n");
+        exit(1);
     }
 
 start:
@@ -601,9 +626,19 @@ FILE * received_file(const char *buffer, int len, char *filename)
         }
         strcat(path, "/");
         strcat(path, (buffer + 4));
+        #if 0
+        if (strcmp(buffer + 4, "TS1500DC_update_ARM.bin") == 0) 
+        {
+            if (remove(buffer + 4) < 0)
+            {
+                printf("fail to delete %s \n",buffer + 4);
+            }
+        }
+        #endif
         fd_now = fopen(path, "w+");
         if(fd_now == NULL)
         {
+            printf("%s\n",path);
             printf("can not open file\n");
             printf("Maybe have not enough space\n");
             exit(1);
