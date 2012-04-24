@@ -1,0 +1,8 @@
+#!/bin/bash
+BOARD_NUM=0
+((BOARD_NUM++))
+echo $BOARD_NUM
+((BOARD_NUM+=1))
+echo $BOARD_NUM
+let BOARD_NUM=$BOARD_NUM+1
+echo $BOARD_NUM
