@@ -1,2 +1,0 @@
-arm_v5t_le-gcc  reg_test.c -o reg_test.bin
-cp reg_test.bin /home/navyzhou/tftp

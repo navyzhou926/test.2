@@ -1,0 +1,57 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DEBUG	checkip.c	54;"	d	file:
+ETH_INTERFACE	checkip.c	58;"	d	file:
+LOG	checkip.c	51;"	d	file:
+LOG_ALERT	checkip.c	45;"	d	file:
+LOG_CRIT	checkip.c	46;"	d	file:
+LOG_DEBUG	checkip.c	50;"	d	file:
+LOG_EMERG	checkip.c	44;"	d	file:
+LOG_ERR	checkip.c	48;"	d	file:
+LOG_INFO	checkip.c	49;"	d	file:
+LOG_WARNING	checkip.c	47;"	d	file:
+MAC_BCAST_ADDR	checkip.c	57;"	d	file:
+__CHECKIP_H	checkip.h	2;"	d
+arp	checkip.h	/^	unsigned char arp[6];		\/* Our arp address *\/$/;"	m	struct:server_config_t
+arpMsg	checkip.h	/^struct arpMsg {$/;"	s
+arpping	checkip.c	/^int arpping(u_int32_t yiaddr, u_int32_t ip, unsigned char *mac, char *interface)$/;"	f
+auto_time	checkip.h	/^	unsigned long auto_time; 	\/* how long should udhcpd wait before writing a config file.$/;"	m	struct:server_config_t
+boot_file	checkip.h	/^	char *boot_file;		\/* bootp boot file option *\/$/;"	m	struct:server_config_t
+check_ip	checkip.c	/^int check_ip(u_int32_t addr)$/;"	f
+conflict_time	checkip.h	/^	unsigned long conflict_time; 	\/* how long an arp conflict offender is leased for *\/$/;"	m	struct:server_config_t
+decline_time	checkip.h	/^	unsigned long decline_time; 	\/* how long an address is reserved if a client returns a$/;"	m	struct:server_config_t
+end	checkip.h	/^	u_int32_t end;			\/* End of leases, network order *\/$/;"	m	struct:server_config_t
+ethhdr	checkip.h	/^	struct ethhdr ethhdr;	 		\/* Ethernet header *\/$/;"	m	struct:arpMsg	typeref:struct:arpMsg::ethhdr
+hlen	checkip.h	/^	u_char  hlen;				\/* hardware address length (must be 6) *\/$/;"	m	struct:arpMsg
+htype	checkip.h	/^	u_short htype;				\/* hardware type (must be ARPHRD_ETHER) *\/$/;"	m	struct:arpMsg
+ifindex	checkip.h	/^	int ifindex;			\/* Index number of the interface to use *\/$/;"	m	struct:server_config_t
+interface	checkip.h	/^	char *interface;		\/* The name of the interface to use *\/$/;"	m	struct:server_config_t
+lease	checkip.h	/^	unsigned long lease;		\/* lease time in seconds (host order) *\/$/;"	m	struct:server_config_t
+lease_file	checkip.h	/^	char *lease_file;$/;"	m	struct:server_config_t
+main	checkip.c	/^int main(int argc, char *argv[])$/;"	f
+max_leases	checkip.h	/^	unsigned long max_leases; 	\/* maximum number of leases (including reserved address) *\/$/;"	m	struct:server_config_t
+min_lease	checkip.h	/^	unsigned long min_lease; 	\/* minimum lease a client can request*\/$/;"	m	struct:server_config_t
+notify_file	checkip.h	/^	char *notify_file;		\/* What to run whenever leases are written *\/$/;"	m	struct:server_config_t
+offer_time	checkip.h	/^	unsigned long offer_time; 	\/* how long an offered address is reserved *\/$/;"	m	struct:server_config_t
+operation	checkip.h	/^	u_short operation;			\/* ARP opcode *\/$/;"	m	struct:arpMsg
+options	checkip.h	/^	struct option_set *options;	\/* List of DHCP options loaded from the config file *\/$/;"	m	struct:server_config_t	typeref:struct:server_config_t::option_set
+pad	checkip.h	/^	u_char  pad[18];			\/* pad for min. Ethernet payload (60 bytes) *\/$/;"	m	struct:arpMsg
+pidfile	checkip.h	/^	char *pidfile;$/;"	m	struct:server_config_t
+plen	checkip.h	/^	u_char  plen;				\/* protocol address length (must be 4) *\/$/;"	m	struct:arpMsg
+ptype	checkip.h	/^	u_short ptype;				\/* protocol type (must be ETH_P_IP) *\/$/;"	m	struct:arpMsg
+read_interface	checkip.c	/^int read_interface(char *interface, int *ifindex, u_int32_t *addr, unsigned char *arp)$/;"	f
+remaining	checkip.h	/^	char remaining; 		\/* should the lease file be interpreted as lease time remaining, or$/;"	m	struct:server_config_t
+sHaddr	checkip.h	/^	u_char  sHaddr[6];			\/* sender's hardware address *\/$/;"	m	struct:arpMsg
+sInaddr	checkip.h	/^	u_char  sInaddr[4];			\/* sender's IP address *\/$/;"	m	struct:arpMsg
+server	checkip.h	/^	u_int32_t server;		\/* Our IP, in network order *\/$/;"	m	struct:server_config_t
+server_config	checkip.c	/^struct server_config_t server_config;$/;"	v	typeref:struct:server_config_t
+server_config_t	checkip.h	/^struct server_config_t {$/;"	s
+siaddr	checkip.h	/^	u_int32_t siaddr;		\/* next server bootp option *\/$/;"	m	struct:server_config_t
+sname	checkip.h	/^	char *sname;			\/* bootp server name *\/$/;"	m	struct:server_config_t
+start	checkip.h	/^	u_int32_t start;		\/* Start address of leases, network order *\/$/;"	m	struct:server_config_t
+tHaddr	checkip.h	/^	u_char  tHaddr[6];			\/* target's hardware address *\/$/;"	m	struct:arpMsg
+tInaddr	checkip.h	/^	u_char  tInaddr[4];			\/* target's IP address *\/$/;"	m	struct:arpMsg

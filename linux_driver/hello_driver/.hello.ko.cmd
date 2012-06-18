@@ -1,1 +1,0 @@
-cmd_/home/navyzhou/navy/hello_driver/hello.ko := arm_v5t_le-ld -EL  -r -o /home/navyzhou/navy/hello_driver/hello.ko /home/navyzhou/navy/hello_driver/hello.o /home/navyzhou/navy/hello_driver/hello.mod.o

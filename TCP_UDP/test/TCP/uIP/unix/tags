@@ -1,0 +1,79 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BIG_ENDIAN	uipopt.h	485;"	d
+BUF	main.c	43;"	d	file:
+BUF	uip_arch.c	39;"	d	file:
+BYTE_ORDER	uipopt.h	497;"	d
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-Wall -g -I..\/uip -I. -I..\/apps\/httpd -I..\/apps\/resolv -I..\/apps\/webclient -I..\/apps\/smtp  -I..\/apps\/telnet -fpack-struct$/;"	m
+DEVTAP	tapdev.c	55;"	d	file:
+DEVTAP	tapdev.c	57;"	d	file:
+IP_PROTO_TCP	uip_arch.c	40;"	d	file:
+LITTLE_ENDIAN	uipopt.h	482;"	d
+NULL	main.c	46;"	d	file:
+UIP_ACTIVE_OPEN	uipopt.h	299;"	d
+UIP_ARPTAB_SIZE	uipopt.h	398;"	d
+UIP_ARP_MAXAGE	uipopt.h	406;"	d
+UIP_BUFSIZE	uipopt.h	426;"	d
+UIP_CONNS	uipopt.h	310;"	d
+UIP_DRIPADDR0	uipopt.h	159;"	d
+UIP_DRIPADDR1	uipopt.h	162;"	d
+UIP_DRIPADDR2	uipopt.h	165;"	d
+UIP_DRIPADDR3	uipopt.h	168;"	d
+UIP_ETHADDR0	uipopt.h	183;"	d
+UIP_ETHADDR1	uipopt.h	186;"	d
+UIP_ETHADDR2	uipopt.h	189;"	d
+UIP_ETHADDR3	uipopt.h	192;"	d
+UIP_ETHADDR4	uipopt.h	195;"	d
+UIP_ETHADDR5	uipopt.h	198;"	d
+UIP_FIXEDADDR	uipopt.h	117;"	d
+UIP_FIXEDETHADDR	uipopt.h	181;"	d
+UIP_IPADDR0	uipopt.h	133;"	d
+UIP_IPADDR1	uipopt.h	136;"	d
+UIP_IPADDR2	uipopt.h	139;"	d
+UIP_IPADDR3	uipopt.h	142;"	d
+UIP_LISTENPORTS	uipopt.h	319;"	d
+UIP_LLH_LEN	uipopt.h	466;"	d
+UIP_LOGGING	uipopt.h	447;"	d
+UIP_MAXRTX	uipopt.h	356;"	d
+UIP_MAXSYNRTX	uipopt.h	365;"	d
+UIP_NETMASK0	uipopt.h	146;"	d
+UIP_NETMASK1	uipopt.h	149;"	d
+UIP_NETMASK2	uipopt.h	152;"	d
+UIP_NETMASK3	uipopt.h	155;"	d
+UIP_PINGADDRCONF	uipopt.h	131;"	d
+UIP_REASSEMBLY	uipopt.h	229;"	d
+UIP_REASS_MAXAGE	uipopt.h	236;"	d
+UIP_RECEIVE_WINDOW	uipopt.h	330;"	d
+UIP_RTO	uipopt.h	348;"	d
+UIP_STATISTICS	uipopt.h	436;"	d
+UIP_TCP_MSS	uipopt.h	372;"	d
+UIP_TIME_WAIT_TIMEOUT	uipopt.h	380;"	d
+UIP_TTL	uipopt.h	214;"	d
+UIP_UDP	uipopt.h	256;"	d
+UIP_UDP_APPCALL	uipopt.h	280;"	d
+UIP_UDP_CHECKSUMS	uipopt.h	266;"	d
+UIP_UDP_CONNS	uipopt.h	273;"	d
+UIP_URGDATA	uipopt.h	341;"	d
+__TAPDEV_H__	tapdev.h	36;"	d
+__UIPOPT_H__	uipopt.h	58;"	d
+fd	tapdev.c	/^static int fd;$/;"	v	file:
+lasttime	tapdev.c	/^static unsigned long lasttime;$/;"	v	file:
+linux	tapdev.c	50;"	d	file:
+main	main.c	/^int main(void)$/;"	f
+tapdev_init	tapdev.c	/^tapdev_init(void)$/;"	f
+tapdev_read	tapdev.c	/^unsigned int tapdev_read(void)$/;"	f
+tapdev_send	tapdev.c	/^tapdev_send(void)$/;"	f
+tz	tapdev.c	/^static struct timezone tz;$/;"	v	typeref:struct:timezone	file:
+u16_t	uipopt.h	/^typedef unsigned short u16_t;$/;"	t
+u8_t	uipopt.h	/^typedef unsigned char u8_t;$/;"	t
+uip_add32	uip_arch.c	/^uip_add32(u8_t *op32, u16_t op16)$/;"	f
+uip_chksum	uip_arch.c	/^uip_chksum(u16_t *sdata, u16_t len)$/;"	f
+uip_ipchksum	uip_arch.c	/^uip_ipchksum(void)$/;"	f
+uip_log	main.c	/^void uip_log(char *m)$/;"	f
+uip_stats_t	uipopt.h	/^typedef unsigned short uip_stats_t;$/;"	t
+uip_tcpchksum	uip_arch.c	/^uip_tcpchksum(void)$/;"	f
